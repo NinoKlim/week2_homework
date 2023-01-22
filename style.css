@@ -1,0 +1,120 @@
+:root {
+  --bs-gradient: linear-gradient(
+    to top,
+    rgba(230, 233, 240, 0.5),
+    rgba(238, 241, 245, 0.5)
+  );
+  --column-bg-gradien: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  --link-color: grey;
+  --btn-dark-color: #f8f9fa;
+  --btn-light-color: rgb(34, 38, 42);
+  --btn-dark-bg: #212529;
+  --btn-light-bg: #f8f9fa;
+  --btn-light-hover-bg: #424649;
+  --btn-dark-hover-bg: #f8f9fa;
+  --btn-dark-hover-border-color: #373b3e;
+  --btn-light-hover-border-color: #f8f9fa;
+
+  --text-padding-col: 20px;
+  --box-radius: 15px;
+  --box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+}
+body {
+  text-align: center;
+  margin: 25px 60px;
+}
+a:visited {
+  color: var(--link-color);
+}
+
+h1,
+h3 {
+  color: var(--btn-dark-bg);
+  margin-bottom: 7px;
+}
+h5 {
+  color: var(--btn-light-hover-bg);
+  margin: 0 0 20px;
+}
+.paragraph-style {
+  background-image: var(--column-bg-gradien);
+  color: var(--btn-dark-hover-border-color);
+  padding: var(--text-padding-col);
+  border-radius: var(--box-radius);
+  box-shadow: var(--box-shadow);
+}
+.image-box-style {
+  background-image: var(--bs-gradient);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
+}
+.flex-buttons {
+  display: flex;
+
+  justify-content: center;
+}
+.btn-general-style {
+  transition: all 200ms ease-in-out;
+  padding: 10px 20px;
+  margin: 0 25px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
+}
+
+.buttonDark {
+  color: var(--btn-dark-color);
+  background-color: var(--btn-dark-bg);
+  border: 1px solid rgb(255, 255, 255);
+}
+.buttonLight {
+  color: var(--btn-light-color);
+  background-color: var(--btn-light-bg);
+  border: 1px solid rgb(34, 38, 42);
+}
+
+.buttonDark:hover {
+  color: var(--btn-light-color);
+  background-color: var(--bs-btn-hover-color);
+  border: rgb(248, 249, 250) 1px solid;
+}
+.buttonLight:hover {
+  color: var(--btn-dark-color);
+  background-color: var(--btn-dark-bg);
+  border: rgb(248, 249, 250) 1px solid;
+}
+
+.homepage-title {
+  background-image: var(--bs-gradient);
+  padding: 50px 0;
+  border-radius: var(--box-radius);
+  margin-bottom: 40px;
+}
+
+.flex-text {
+  display: flex;
+}
+.flex-text p {
+  margin: 10px;
+}
+.about-me-section {
+  text-align: center;
+}
+
+#git-hub,
+.gitHub {
+  font-size: 14px;
+}
+
+.gitHub {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.img-project1 {
+  border-radius: var(--box-radius);
+}
+
+.navbar {
+  margin-bottom: 15px;
+  margin-left: 60px;
+}

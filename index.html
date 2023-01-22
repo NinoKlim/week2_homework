@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> Klymenko Nina </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  target="_blank"
+                  href="contact.html"
+                  >About me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="weather.html"
+                  >Weather</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="contact.html#mail"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="homepage-title">
+      <div>
+        <h3>✋🏼 Salut, I am</h3>
+        <h1>Nina Klymenko</h1>
+        <h5>🇺🇦 Junior web developer</h5>
+      </div>
+
+      <div class="flex-buttons">
+        <form action="contact.html" target="_blank">
+          <button class="buttonLight btn-general-style">About me</button>
+        </form>
+        <form action="contact.html#mail" target="_blank">
+          <button class="buttonDark btn-general-style">Contact me</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6 d-flex align-items-center image-box-style">
+          <img
+            src="media/project1.png"
+            alt="photo"
+            class="img-fluid img-project1 py-2"
+            max-width="100%"
+          />
+        </div>
+        <div class="col-6 paragraph-style">
+          <strong> La maison du MIEL</strong> <br />
+          Nos miels sont sélectionnés soigneusement et récoltés dans des régions
+          sauvages et préservées. Aussi, ils sont toujours extraits à froid,
+          dans la pure tradition apicole, afin de préserver tous leurs bienfaits
+          et leurs propriétés.
+          <form action="miel/index.html" target="_blank">
+            <button class="buttonDark btn-general-style mt-4">
+              Visit page
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-6 paragraph-style">
+          <strong> Weather project</strong> <br />
+          The Weather Project est une installation du plasticien danois Olafur
+          Eliasson exposée à la Tate Modern de Londres en 2003. Elle évoque un
+          grand soleil jaune éclairant la pièce où se tiennent les visiteurs.
+          Cette œu vre se raccorde à une autre œuvre d'Olafur Eliasson portant
+          sur le même sujet et défend la même cause.
+          <form
+            action="https://relaxed-sherbet-e9b1e9.netlify.app/"
+            target="_blank"
+          >
+            <button class="buttonDark btn-general-style mt-4">
+              Visit page
+            </button>
+          </form>
+        </div>
+        <div class="col-6 image-box-style d-flex align-items-center">
+          <img
+            src="media/weatherProject.png"
+            alt="photo"
+            class="img-fluid img-project1 py-2"
+            max-width="100%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="gitHub">
+      <span>
+        <a
+          id="git-hub"
+          href="https://github.com/NinoKlim/SheCodesResponsive"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Nina Klymenko
+      </span>
+    </div>
+  </body>
+</html>
