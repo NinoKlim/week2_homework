@@ -4,45 +4,78 @@
     rgba(230, 233, 240, 0.5),
     rgba(238, 241, 245, 0.5)
   );
+  --btn-dark-bg: #212529;
+  --text-dark-color: #212529;
+
   --column-bg-gradien: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   --link-color: grey;
   --btn-dark-color: #f8f9fa;
   --btn-light-color: rgb(34, 38, 42);
-  --btn-dark-bg: #212529;
   --btn-light-bg: #f8f9fa;
   --btn-light-hover-bg: #424649;
   --btn-dark-hover-bg: #f8f9fa;
   --btn-dark-hover-border-color: #373b3e;
   --btn-light-hover-border-color: #f8f9fa;
 
-  --text-padding-col: 20px;
   --box-radius: 15px;
   --box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
 }
 body {
-  text-align: center;
   margin: 25px 60px;
+  text-align: center;
 }
+.navbar {
+  margin: 0 60px;
+}
+.homepage-title {
+  padding: 50px 0;
+  background-image: var(--bs-gradient);
+  border-radius: var(--box-radius);
+  margin-bottom: 40px;
+  color: var(--text-dark-color);
+}
+.title-text h2,
+h5 {
+  padding-bottom: 20px;
+}
+
+.paragraph-style {
+  background-image: var(--column-bg-gradien);
+  color: var(--btn-dark-hover-border-color);
+  border-radius: var(--box-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px 10px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    margin: 0px;
+  }
+  .homepage-title {
+    padding: 30px 0px 10px 0;
+    margin-bottom: 0px;
+  }
+  .title-text h2,
+  h5 {
+    font-size: 14px;
+    padding-bottom: 0;
+  }
+  .title-text h1 {
+    font-size: 20px;
+  }
+  body {
+    margin: 25px 0px;
+  }
+  .paragraph-style {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
 a:visited {
   color: var(--link-color);
 }
 
-h1,
-h3 {
-  color: var(--btn-dark-bg);
-  margin-bottom: 7px;
-}
-h5 {
-  color: var(--btn-light-hover-bg);
-  margin: 0 0 20px;
-}
-.paragraph-style {
-  background-image: var(--column-bg-gradien);
-  color: var(--btn-dark-hover-border-color);
-  padding: var(--text-padding-col);
-  border-radius: var(--box-radius);
-  box-shadow: var(--box-shadow);
-}
 .image-box-style {
   background-image: var(--bs-gradient);
   box-shadow: var(--box-shadow);
@@ -83,13 +116,6 @@ h5 {
   border: rgb(248, 249, 250) 1px solid;
 }
 
-.homepage-title {
-  background-image: var(--bs-gradient);
-  padding: 50px 0;
-  border-radius: var(--box-radius);
-  margin-bottom: 40px;
-}
-
 .flex-text {
   display: flex;
 }
@@ -113,9 +139,4 @@ h5 {
 
 .img-project1 {
   border-radius: var(--box-radius);
-}
-
-.navbar {
-  margin-bottom: 15px;
-  margin-left: 60px;
 }
