@@ -34,6 +34,12 @@ button:hover {
   color: #404040;
   border: 1px solid #404040;
 }
+.homepage-link {
+  color: #404040;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
 a {
   color: #faebd7;
   text-decoration: none;
@@ -129,7 +135,7 @@ ul.complexList {
 }
 .modalBox {
   position: absolute;
-  top: 30px;
+  top: 60px;
   left: 60px;
 }
 .contact {
@@ -149,7 +155,7 @@ ul.complexList {
 #beeIcon {
   position: fixed;
   left: 20px;
-  top: 100px;
+  top: 130px;
 }
 #beeIconBtn {
   background: transparent;
