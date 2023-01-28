@@ -17,7 +17,7 @@
   --btn-dark-hover-border-color: #373b3e;
   --btn-light-hover-border-color: #f8f9fa;
 
-  --box-radius: 15px;
+  --box-radius: 20px;
   --box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
 }
 body {
@@ -46,7 +46,15 @@ h5 {
   box-shadow: var(--box-shadow);
   padding: 20px 10px;
 }
+#git-hub,
+.gitHub {
+  font-size: 14px;
+}
 
+.gitHub {
+  margin-top: 50px;
+  text-align: center;
+}
 @media (max-width: 600px) {
   .navbar {
     margin: 0px;
@@ -56,7 +64,8 @@ h5 {
     margin-bottom: 0px;
   }
   .title-text h2,
-  h5 {
+  h5,
+  h3 {
     font-size: 14px;
     padding-bottom: 0;
   }
@@ -69,6 +78,11 @@ h5 {
   .paragraph-style {
     font-size: 14px;
     margin: 0;
+  }
+  #git-hub,
+  .gitHub {
+    margin-top: 20px;
+    font-size: 12px;
   }
 }
 
@@ -83,7 +97,6 @@ a:visited {
 }
 .flex-buttons {
   display: flex;
-
   justify-content: center;
 }
 .btn-general-style {
@@ -122,21 +135,7 @@ a:visited {
 .flex-text p {
   margin: 10px;
 }
-.about-me-section {
-  text-align: center;
-  margin-top: 80px;
-}
 
-#git-hub,
-.gitHub {
-  font-size: 14px;
-}
-
-.gitHub {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.img-project1 {
+.img-project {
   border-radius: var(--box-radius);
 }
