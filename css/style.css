@@ -63,7 +63,9 @@ a:visited {
   border-radius: var(--box-radius);
   max-width: 100%;
 }
-
+.img-hover:hover {
+  transform: scale(1.1);
+}
 .flex-buttons {
   display: flex;
   justify-content: center;
