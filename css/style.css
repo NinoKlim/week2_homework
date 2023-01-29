@@ -4,39 +4,45 @@
     rgba(230, 233, 240, 0.5),
     rgba(238, 241, 245, 0.5)
   );
-  --btn-dark-bg: #212529;
   --text-dark-color: #212529;
-
   --column-bg-gradien: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   --link-color: grey;
+
   --btn-dark-color: #f8f9fa;
+  --btn-dark-bg: #212529;
+  --btn-light-border: 1px solid #373b3e;
+  --btn-dark-border: 1px solid #f8f9fa;
   --btn-light-color: rgb(34, 38, 42);
   --btn-light-bg: #f8f9fa;
-  --btn-light-hover-bg: #424649;
-  --btn-dark-hover-bg: #f8f9fa;
-  --btn-dark-hover-border-color: #373b3e;
-  --btn-light-hover-border-color: #f8f9fa;
 
   --box-radius: 20px;
   --box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
 }
+
 body {
   margin: 25px 60px;
   text-align: center;
 }
+.title-text h2,
+h5 {
+  padding-bottom: 20px;
+}
+a:visited {
+  color: var(--link-color);
+}
 .navbar {
   margin: 0 60px;
 }
-.homepage-title {
+.weather-page {
+  padding-top: 50px;
+  margin-top: 20px;
+}
+.general-title-style {
   padding: 50px 0;
   background-image: var(--bs-gradient);
   border-radius: var(--box-radius);
   margin-bottom: 40px;
   color: var(--text-dark-color);
-}
-.title-text h2,
-h5 {
-  padding-bottom: 20px;
 }
 
 .paragraph-style {
@@ -45,6 +51,43 @@ h5 {
   border-radius: var(--box-radius);
   box-shadow: var(--box-shadow);
   padding: 20px 10px;
+}
+
+.image-box-style {
+  background-image: var(--bs-gradient);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
+}
+
+.img-project {
+  border-radius: var(--box-radius);
+  max-width: 100%;
+}
+
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-general-style {
+  transition: all 200ms ease-in-out;
+  padding: 10px 20px;
+  margin: 0 25px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
+}
+
+.buttonDark,
+.buttonLight:hover {
+  color: var(--btn-dark-color);
+  background-color: var(--btn-dark-bg);
+  border: var(--btn-dark-border);
+}
+.buttonLight,
+.buttonDark:hover {
+  color: var(--btn-light-color);
+  background-color: var(--btn-light-bg);
+  border: var(--btn-light-border);
 }
 #git-hub,
 .gitHub {
@@ -55,6 +98,7 @@ h5 {
   margin-top: 50px;
   text-align: center;
 }
+
 @media (max-width: 600px) {
   .navbar {
     margin: 0px;
@@ -87,58 +131,4 @@ h5 {
   .paragraph-title {
     margin-bottom: 0;
   }
-}
-
-a:visited {
-  color: var(--link-color);
-}
-
-.image-box-style {
-  background-image: var(--bs-gradient);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--box-radius);
-}
-.flex-buttons {
-  display: flex;
-  justify-content: center;
-}
-.btn-general-style {
-  transition: all 200ms ease-in-out;
-  padding: 10px 20px;
-  margin: 0 25px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--box-radius);
-}
-
-.buttonDark {
-  color: var(--btn-dark-color);
-  background-color: var(--btn-dark-bg);
-  border: 1px solid rgb(255, 255, 255);
-}
-.buttonLight {
-  color: var(--btn-light-color);
-  background-color: var(--btn-light-bg);
-  border: 1px solid rgb(34, 38, 42);
-}
-
-.buttonDark:hover {
-  color: var(--btn-light-color);
-  background-color: var(--bs-btn-hover-color);
-  border: rgb(248, 249, 250) 1px solid;
-}
-.buttonLight:hover {
-  color: var(--btn-dark-color);
-  background-color: var(--btn-dark-bg);
-  border: rgb(248, 249, 250) 1px solid;
-}
-
-.flex-text {
-  display: flex;
-}
-.flex-text p {
-  margin: 10px;
-}
-
-.img-project {
-  border-radius: var(--box-radius);
 }
