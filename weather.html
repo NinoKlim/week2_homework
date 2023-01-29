@@ -65,24 +65,39 @@
         </div>
       </nav>
     </div>
-    <div class="container my-3">
+    <div class="container-fluid my-3">
       <div class="row">
-        <div class="col-sm-6 paragraph-style">
-          <strong> Weather project</strong> <br />
-          The Weather Project est une installation du plasticien danois Olafur
-          Eliasson exposée à la Tate Modern de Londres en 2003. Elle évoque un
-          grand soleil jaune éclairant la pièce où se tiennent les visiteurs.
-          Cette œu vre se raccorde à une autre œuvre d'Olafur Eliasson portant
-          sur le même sujet et défend la même cause.
-          <form
-            action="https://relaxed-sherbet-e9b1e9.netlify.app/"
-            target="_blank"
-          >
-            <button class="buttonDark btn-general-style mt-4">
-              Visit page
-            </button>
-          </form>
+        <div
+          class="col-sm-6 paragraph-style d-flex flex-wrap justify-content-center align-self-strech"
+        >
+          <div class="my-auto">
+            <p class="paragraph-title"><strong>Weather project </strong></p>
+
+            The Weather Project est une installation du plasticien danois Olafur
+            Eliasson exposée à la Tate Modern de Londres en 2003. Elle évoque un
+            grand soleil jaune éclairant la pièce où se tiennent les visiteurs.
+            Cette œu vre se raccorde à une autre œuvre d'Olafur Eliasson portant
+            sur le même sujet et défend la même cause.
+          </div>
+          <div>
+            <form
+              action="https://relaxed-sherbet-e9b1e9.netlify.app/"
+              target="_blank"
+            >
+              <button
+                class="buttonDark btn btn-general-style mt-4 btn-sm d-block d-sm-none"
+              >
+                Visit page
+              </button>
+              <button
+                class="buttonDark btn btn-general-style mt-4 d-none d-sm-block"
+              >
+                Visit page
+              </button>
+            </form>
+          </div>
         </div>
+
         <div class="col-sm-6 image-box-style d-flex align-items-center">
           <img
             src="media/weatherProject.png"
@@ -93,7 +108,6 @@
         </div>
       </div>
     </div>
-
     <div class="gitHub">
       <span>
         <a

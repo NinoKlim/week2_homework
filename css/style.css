@@ -84,6 +84,9 @@ h5 {
     margin-top: 20px;
     font-size: 12px;
   }
+  .paragraph-title {
+    margin-bottom: 0;
+  }
 }
 
 a:visited {
